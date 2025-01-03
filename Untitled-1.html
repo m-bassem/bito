@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيتو</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Cairo', Arial, sans-serif;
+            direction: rtl;
+            text-align: center ;
+        }
+
+        header {
+            background-color: #1e1e2f;
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        .logo img {
+            max-height: 100px; /* تم تعديل الحجم هنا */
+            align:center ;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        #hero {
+            background-color: #121212;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .btn {
+            background-color: #00bfff;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 30px 20px;
+            background-color: #1e1e2f;
+            margin: 10px 0;
+        }
+
+        .news-grid article {
+            background-color: #121212;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .news-grid article h3 {
+            color: #00bfff;
+        }
+
+        .team-grid .team {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .team img {
+            max-width: 150px;
+            border-radius: 10px;
+        }
+
+        .team h3 {
+            color: #00bfff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #00bfff;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #121212;
+        }
+
+        footer p {
+            color: #00bfff;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .logo img {
+                max-height: 80px; /* تصغير اللوجو */
+            }
+
+            .news-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+            }
+
+            .team-grid .team {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+
+        /* Media Query for smaller screens (phones in portrait mode) */
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .news-grid article h3 {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+
+            table th, table td {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo_transparent.png" alt="شعار بيتو"> <!-- تم تعديل الرابط هنا -->
+            </div>
+            <h1>بيتو       </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#news">الأخبار</a></li>
+                    <li><a href="#matches">المباريات</a></li>
+                    <li><a href="#teams">الفرق</a></li>
+                    <li><a href="#about">عن الموقع</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>ابقَ على اطلاع بأحدث أخبار الرياضة</h2>
+                <a href="#news" class="btn">استكشاف الأخبار</a>
+            </div>
+        </section>
+
+        <section id="news" class="section">
+            <div class="container">
+                <h2>آخر الأخبار</h2>
+                <div class="news-grid">
+                    <article>
+                        <h3>أخبار الانتقالات</h3>
+                        <p>مصدر بالأهلي .. فسخ التعاقد مع بيرسي تاو بالتراضي والأعلان قريبا</p>
+                        <a href="#">تفاصيل اكثر</a>
+                    </article>
+                    <article>
+                        <h3>الرياضات الاخرى</h3>
+                        <p>الاهلي يواجه سموحه اليوم في دوري اليد </p>
+                        <a href="#">تفاصيل اكثر</a>
+                    </article>
+                    <article>
+                        <h3>تحديثات الإصابات</h3>
+                        <p>اصابة رضا سليم تستمر لمدة 6 اشهر .. والاهلي يقرر رفعه من القائمه.</p>
+                        <a href="#">تفاصيل اكثر</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="matches" class="section">
+            <div class="container">
+                <h2>المباريات القادمة</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المباراة</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>الملعب</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>الأهلي vs شباب بلوزداد </td>
+                            <td>2025-01-05</td>
+                            <td>9:00</td>
+                            <td>ملعب 5 جويليه</td>
+                        </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="teams" class="section">
+            <div class="container">
+                <h2>فرق العالم</h2>
+                <div class="team-grid">
+                    <div class="team" onclick="showTeamDetails('ريال مدريد ', 'افضل نادي في العالم وايضا نادي القرن الاوروبي .')">
+                        <img src="الريال 2.png" alt="ريال مدريد">
+                        <h3>ريال مدريد </h3>
+                    </div>
+                </div>
+                <div id="team-details" class="team-details">
+                    <h3 id="team-name"></h3>
+                    <p id="team-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>عن بيتو</h2>
+                <p>بيتو هو منصة حديثة لأخبار الرياضة مكرسة لتوفير تحديثات في الوقت الفعلي، وتحليلات متعمقة، ومحتوى حصري لعشاق الرياضة حول العالم.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>اتصل بنا</h2>
+                <form>
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Bassem,.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTeamDetails(name, description) {
+            document.getElementById('team-name').innerText = name;
+            document.getElementById('team-description').innerText = description;
+            document.getElementById('team-details').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
